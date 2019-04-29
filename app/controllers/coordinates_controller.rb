@@ -19,7 +19,7 @@ class CoordinatesController < ApplicationController
       elsif error.io.status[0] == '400'
         render json: {
           error: error.message.to_s
-        }, status: :not_found
+        }, status: :bad_request
       end
     end
   end
