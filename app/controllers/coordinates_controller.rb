@@ -1,7 +1,7 @@
 require 'open-uri'
 class CoordinatesController < ApplicationController
   include ActionController::HttpAuthentication::Token::ControllerMethods
-  before_action :authenticate
+  # before_action :authenticate
 
   def index
     begin
